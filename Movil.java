@@ -4,7 +4,7 @@ public class Movil extends DispElect{
   private int ram;
 
   public Movil (int id, int precio, String nombre, String marca, String pantalla, String sistema, int ram){
-    super(int id, int precio, String nombre, String marca, String pantalla);
+    super(id, precio, nombre, marca, pantalla);
     this.sistema=sistema;
     this.ram=ram;
   }
