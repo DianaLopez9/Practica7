@@ -18,4 +18,12 @@ public class DispElect{
 	public String toString(){
 		return "Dispositivo Electronico"
 	}
+
+	public void mostrarDatos(){
+		System.out.println("Nombre: "+this.nombre);
+		System.out.println("Marca: "+this.marca);
+		System.out.println("Pantalla: "+this.pantalla);
+		System.out.println("Precio: "+this.id);
+		System.out.println("Id: "+this.id);
+	}
 }
