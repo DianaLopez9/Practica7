@@ -10,6 +10,11 @@ public class Television extends DispElect{
   public String toString(){
     return "Television";
   }
+
+  public void mostrarDatos(){
+	super.mostrarDatos();
+  System.out.println("Garantia: "+this.garantia);
+  }
   
 }
 
