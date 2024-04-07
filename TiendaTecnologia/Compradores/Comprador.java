@@ -2,29 +2,24 @@ package TiendaTecnologia.Compradores;
 
 import java.util.Random; 
 
-public class Comprador{
-	private int id; 
-	private String nombre;
-	private String apellido;
-	//private CarritoDeCompras miCarrito;
+import java.util.Random; 
 
-	Random rand = new Random();
+public class Comprador {
+    private int id; 
+    private String nombre;
+    private String apellido;
+    public CarritoDeCompras miCarrito;
 
-	public Comprador(String nombre, String apellido){
-		this.id = rand.nextInt(10000);
-		this.nombre = nombre;
-		this.apellido = apellido;
-		//this.miCarrito = new CarritoDeCompras();
-	}
+    Random rand = new Random();
+    
+    public Comprador(String nombre, String apellido){
+	this.id = rand.nextInt(10000);
+	this.nombre = nombre;
+	this.apellido = apellido;
+	this.miCarrito = new CarritoDeCompras();
+    }
 
-    //????
-	/*public void mostrarMenu(){
-		System.out.println("Bienvenido al Menu");
-		System.out.println("Pc");
-		System.out.println("Laptop");
-	}*/
-
-	public int getId() {
+    public int getId() {
         return id;
     }
 
@@ -36,23 +31,28 @@ public class Comprador{
         return apellido;
     }
 
-    /*public void mostrarDescuentos(){
-		System.out.println("Estos son los descuentos disponibles");
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-   public void agregarAlCarrito(DispositivoElectronico dispositivo) {
-      
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    
+    public void agregarAlCarrito(DispElec dispositivo) {
+        this.miCarrito.agregarAlCarrito(dispositivo);
     }
 
     public void mostrarCarrito() {
-        
+        this.miCarrito.mostrarCarrito();
     }
 
-    public void vaciarCarrito() {
-        
-    }
+    /*public void realizarCompra(){
 
-    public void realizarCompra(){
-
-     }*/
+    }*/
+    
 }
