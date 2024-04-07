@@ -2,8 +2,8 @@ public class Television extends DispElect{
 
   private String garantia;
 
-  public Television (int id, double precio, String nombre, String marca, String pantalla, String garantia){
-    super(id, precio, nombre, marca, pantalla);
+  public Television (double precio, String nombre, String marca, String pantalla, String garantia){
+    super(precio, nombre, marca, pantalla);
     this.garantia = garantia;
   }
 
