@@ -9,7 +9,7 @@ public class DispElect{
 
 	Random rand = new Random();
 
-	public DispElect(int id, double precio, String nombre, String marca, String pantalla){
+	public DispElect(double precio, String nombre, String marca, String pantalla){
 		this.id = rand.nextInt(10000);
 		this.precio = precio;
 		this.nombre=nombre;
