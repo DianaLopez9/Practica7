@@ -2,7 +2,7 @@ package TiendaTecnologia.Compradores;
 
 public class Estudiante extends Comprador{
 
-	private ArrayList<DispElect> carrito;
+	//private ArrayList<DispElect> Carrito;
 	private String nombre;
 	private String apellido;
 	//private int 
@@ -12,12 +12,15 @@ public class Estudiante extends Comprador{
 		this.carrito = new ArrayList<>();
 	}
 
-	public void mostrarCarrito(){
-		for(){
-			
-		}
-
+	/*public void agregarAlCarrito(DispElec disp){
+		this.Carrito.add(disp);
 	}
+
+	public void mostrarCarrito(){
+		for(DispElect electronicos : Carrito){
+			electronicos.mostraDatos();
+		}
+	}*/
 
 	
 
