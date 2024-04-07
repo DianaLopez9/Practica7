@@ -5,8 +5,8 @@ public class Pc extends Computadora{
     private String tarjmadre;
     private String tarjgrafica;
     
-    public Pc(int id, int precio, String nombre, String marca, String pantalla, int ram, String sistema, String memoria, String tarjmadre, String tarjgrafica){
-        super(id, precio, nombre, marca, pantalla,ram,sistema);
+    public Pc(double precio, String nombre, String marca, String pantalla, int ram, String sistema, String memoria, String tarjmadre, String tarjgrafica){
+        super(precio, nombre, marca, pantalla,ram,sistema);
         this.memoria=memoria;
         this.tarjmadre=tarjmadre;
         this.tarjgrafica=tarjgrafica;
