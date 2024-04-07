@@ -1,0 +1,9 @@
+package Compradores;
+
+public interface Descuentos {
+   
+    public void setDescuento(double descuento);
+    public double getDescuento();
+    public double precioConDescuento();
+    
+}
