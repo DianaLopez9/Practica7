@@ -1,19 +1,29 @@
+import java.util.Random;
 
 public class DispElect{
 	private int id;
-	private int precio;
-	private String tipoDispElect;
+	private double precio;
 	private String nombre;
 	private String marca;
 	private String pantalla;
 
-	public DispElect(int id, int precio, String nombre, String marca, String pantalla){
-		this.id = id;
+	Random rand = new Random();
+
+	public DispElect(double precio, String nombre, String marca, String pantalla){
+		this.id = rand.nextInt(10000);
 		this.precio = precio;
 		this.nombre=nombre;
 		this.marca=marca;
 		this.pantalla=pantalla;
 	}
+	
+	public double getPrecio() {
+            return precio;
+        }
+
+        public void setPrecio(double precio) {
+            this.precio = precio;
+        }
 
 	public String toString(){
 		return "Dispositivo Electronico"
