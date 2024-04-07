@@ -1,6 +1,7 @@
 package TiendaTecnologia.Compradores;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Estudiante extends Comprador implements Descuentos{
     private double descuento;
@@ -34,8 +35,8 @@ public class Estudiante extends Comprador implements Descuentos{
         return precioEstidiante = (int) (precioEstidiante * (descuento/100.0));
         
     }
-/*
-    public void mostrarMenu(){
+
+    public void crearMenu(){
         Smarthphone smartphone1 = new Smarthphone(1, 500, "Modelo1", "Marca1", "Pantalla1", "Sistema1", 4, 3000, "Tamaño1");
         Smarthphone smartphone2 = new Smarthphone(2, 600, "Modelo2", "Marca2", "Pantalla2", "Sistema2", 6, 3500, "Tamaño2");
         Smarthphone smartphone3 = new Smarthphone(3, 700, "Modelo3", "Marca3", "Pantalla3", "Sistema3", 8, 4000, "Tamaño3");
@@ -61,12 +62,30 @@ public class Estudiante extends Comprador implements Descuentos{
         menu.add(laptop1);
         menu.add(laptop2);
         menu.add(laptop3);
+    }
 
+    public void mostrarMenu(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Estos son los productos que tenemos para usted");
         for(DispElect check : menu){
             check.mostrarDatos();
         }
-        
-    }*/
+
+        System.out.println("Que producto le gustaria comprar?");
+        int chose = sc.nextInt();
+        if(0>chose && chose<menu.size()){
+        miCarrito.agregarAlCarrito(menu.get(chose));
+        System.out.println("Producto agregado al carrito");
+        }
+        else{
+            System.out.println("Por favor, escoja una opcion disponible");
+        }
+    }
+
+    public void ticket(){
+         
+     }
+    
     
     
 }
