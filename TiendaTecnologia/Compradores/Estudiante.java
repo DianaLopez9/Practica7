@@ -50,19 +50,19 @@ public class Estudiante extends Comprador implements Descuentos{
         Laptop laptop2 = new Laptop(8, 1400, "Modelo2", "Marca2", "Pantalla2", 16, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2", 6000);
         Laptop laptop3 = new Laptop(9, 1600, "Modelo3", "Marca3", "Pantalla3", 32, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3", 7000);
 
-        Arraylist<DispElect> dispelect = new Arraylist<>();
+        Arraylist<DispElect> menu = new ArrayList<>();
 
-        dispelect.add(pc1);
-        dispelect.add(pc2);
-        dispelect.add(pc3);
-        dispelect.add(smartphone1);
-        dispelect.add(smartphone2);
-        dispelect.add(smartphone3);
-        dispelect.add(laptop1);
-        dispelect.add(laptop2);
-        dispelect.add(laptop3);
+        menu.add(pc1);
+        menu.add(pc2);
+        menu.add(pc3);
+        menu.add(smartphone1);
+        menu.add(smartphone2);
+        menu.add(smartphone3);
+        menu.add(laptop1);
+        menu.add(laptop2);
+        menu.add(laptop3);
 
-        for(Dispelect check : dispelect){
+        for(DispElect check : menu){
             check.mostrarDatos();
         }
         
