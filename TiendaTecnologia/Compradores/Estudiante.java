@@ -1,32 +1,37 @@
 package TiendaTecnologia.Compradores;
 
-public class Estudiante extends Comprador{
+public class Estudiante extends Comprador implements Descuentos{
+    private double descuento;
+    private int idEstudiante;
+    public int precioEstidiante;
 
-	//private ArrayList<DispElect> Carrito;
-	private String nombre;
-	private String apellido;
-	//private int 
+    public Estudiante(String nombre, String apellido) {
+        super(nombre, apellido);
+    }
+    
+    public void setIdEstidiante(int idEstudiante) {
+        this.idEstudiante = idEstudiante;
+    }
 
-	public Socio(String nombre, String apellido){
-		super(nombre, apellido);
-		this.carrito = new ArrayList<>();
-	}
+    public int getIdEstudiante() {
+        return idEstudiante;
+    }
 
-	/*public void agregarAlCarrito(DispElec disp){
-		this.Carrito.add(disp);
-	}
+    @Override
+    public void setDescuento(double descuento) {
+        this.descuento = descuento;
+    }
 
-	public void mostrarCarrito(){
-		for(DispElect electronicos : Carrito){
-			electronicos.mostraDatos();
-		}
-	}*/
+    @Override
+    public double getDescuento() {
+        return descuento;
+    }
 
-	
-
-	
-	public void mostrarPromociones() {
-	    System.out.println("¡Hola " + getNombre() + " Te mostramos las pomociones disponibles para socio:");
-	}
-	
+    @Override
+    public double precioConDescuento() {
+        return precioEstidiante = (int) (precioEstidiante * (descuento/100.0));
+        
+    }
+    
+    
 }
