@@ -1,5 +1,7 @@
 package TiendaTecnologia.Compradores;
 
+import java.util.ArrayList;
+
 public class Estudiante extends Comprador implements Descuentos{
     private double descuento;
     private int idEstudiante;
@@ -32,6 +34,39 @@ public class Estudiante extends Comprador implements Descuentos{
         return precioEstidiante = (int) (precioEstidiante * (descuento/100.0));
         
     }
+/*
+    public void mostrarMenu(){
+        Smarthphone smartphone1 = new Smarthphone(1, 500, "Modelo1", "Marca1", "Pantalla1", "Sistema1", 4, 3000, "Tamaño1");
+        Smarthphone smartphone2 = new Smarthphone(2, 600, "Modelo2", "Marca2", "Pantalla2", "Sistema2", 6, 3500, "Tamaño2");
+        Smarthphone smartphone3 = new Smarthphone(3, 700, "Modelo3", "Marca3", "Pantalla3", "Sistema3", 8, 4000, "Tamaño3");
+
+        // Crear tres objetos de la clase Pc
+        Pc pc1 = new Pc(4, 800, "Modelo1", "Marca1", "Pantalla1", 4, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1");
+        Pc pc2 = new Pc(5, 900, "Modelo2", "Marca2", "Pantalla2", 8, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2");
+        Pc pc3 = new Pc(6, 1000, "Modelo3", "Marca3", "Pantalla3", 16, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3");
+
+        // Crear tres objetos de la clase Laptop
+        Laptop laptop1 = new Laptop(7, 1200, "Modelo1", "Marca1", "Pantalla1", 8, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1", 5000);
+        Laptop laptop2 = new Laptop(8, 1400, "Modelo2", "Marca2", "Pantalla2", 16, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2", 6000);
+        Laptop laptop3 = new Laptop(9, 1600, "Modelo3", "Marca3", "Pantalla3", 32, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3", 7000);
+
+        Arraylist<DispElect> dispelect = new Arraylist<>();
+
+        dispelect.add(pc1);
+        dispelect.add(pc2);
+        dispelect.add(pc3);
+        dispelect.add(smartphone1);
+        dispelect.add(smartphone2);
+        dispelect.add(smartphone3);
+        dispelect.add(laptop1);
+        dispelect.add(laptop2);
+        dispelect.add(laptop3);
+
+        for(Dispelect check : dispelect){
+            check.mostrarDatos();
+        }
+        
+    }*/
     
     
 }
