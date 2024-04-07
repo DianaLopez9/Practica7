@@ -3,8 +3,8 @@ public class Movil extends DispElect{
   private String sistema;
   private int ram;
 
-  public Movil (int id, int precio, String nombre, String marca, String pantalla, String sistema, int ram){
-    super(id, precio, nombre, marca, pantalla);
+  public Movil (double precio, String nombre, String marca, String pantalla, String sistema, int ram){
+    super(precio, nombre, marca, pantalla);
     this.sistema=sistema;
     this.ram=ram;
   }
@@ -16,7 +16,7 @@ public class Movil extends DispElect{
   public void mostrarDatos(){
       super.mostrarDatos();
       System.out.println("Sistema Operativo: "+this.sistema);
-      System.out.println("Tamaño de RAM: "+this.ram);
+      System.out.println("TamaÃ±o de RAM: "+this.ram);
   }
 
 }
