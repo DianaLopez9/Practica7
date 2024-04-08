@@ -33,20 +33,20 @@ public class Vip extends Comprador{
     
     public void crearMenu(){
         
-        Tablet tab1 = new Tablet("Stylus1", 4000, "10.5 Pulgadas", "Android", 4, 21000, "Sam Pro", "Samsumg", "Samsumg Redonda de 10.5");
-        Tablet tab2 = new Tablet("Stylus2", 5000, "11,5 Pulgadas", "Harmony OS 3.1", 8, 19000, "MatePad 11.5 PaperMatte", "Huawey", "HUAWEI FullView de 11.5");
-        Tablet tab3 = new Tablet("Stylus3", 5000, "13.3 Pulgadas", "Windows 10 Pro", 16, 25000, "5300", "Dell", "Intel de 13.3");
-        Tablet tab4 = new Tablet("Stylus4", 5100, "8 Pulgadas", "A", 3, 30000, "Tab M8", "Lenovo", "HD de 8");
+        Tablet tab1 = new Tablet(4000, "Stylus1", "Samsumg", "Sam Pro", "10.5 Pulgadas", "Android", 4, 21000, "Samsumg Redonda de 10.5");
+        Tablet tab2 = new Tablet(5000, "Stylus2", "Huawey", "MatePad 11.5 PaperMatte", "11.5 Pulgadas", "Harmony OS 3.1", 8, 19000, "HUAWEI FullView de 11.5");
+        Tablet tab3 = new Tablet(5000, "Stylus3", "Dell", "5300", "13.3 Pulgadas", "Windows 10 Pro", 16, 25000, "Intel de 13.3");
+        Tablet tab4 = new Tablet(5100, "Stylus4", "Lenovo", "Tab M8", "8 Pulgadas", "A", 3, 30000, "HD de 8");
 
         // Crear tres objetos de la clase Pc
-        Pc pc1 = new Pc(4, 800, "Modelo1", "Apple", "Pantalla1", 4, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1");
-        Pc pc2 = new Pc(5, 900, "Modelo2", "Lenovo", "Pantalla2", 8, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2");
-        Pc pc3 = new Pc(6, 1000, "IdeaPad 1", "Marca3", "Pantalla3", 16, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3");
+        Pc pc1 = new Pc(800, "Modelo1", "Apple", "Pantalla1", 4, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1");
+        Pc pc2 = new Pc(900, "Modelo2", "Lenovo", "Pantalla2", 8, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2");
+        Pc pc3 = new Pc(1000, "IdeaPad 1", "Marca3", "Pantalla3", 16, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3");
 
         // Crear tres objetos de la clase Laptop
-        Laptop laptop1 = new Laptop(7, 1200, "Modelo1", "Marca1", "Pantalla1", 8, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1", 5000);
-        Laptop laptop2 = new Laptop(8, 1400, "Modelo2", "Marca2", "Pantalla2", 16, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2", 6000);
-        Laptop laptop3 = new Laptop(9, 1600, "Modelo3", "Marca3", "Pantalla3", 32, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3", 7000);
+        Television tv1 = new Television(1000, "Modelo1", "Marca1", "Pantalla1", "1 año");
+        Television tv2 = new Television(1200, "Modelo2", "Marca2", "Pantalla2", "2 años");
+        Television tv3 = new Television(1500, "Modelo3", "Marca3", "Pantalla3", "3 años");
 
         ArrayList<DispElect> menu = new ArrayList<>();
         
