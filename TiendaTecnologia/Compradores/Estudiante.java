@@ -78,7 +78,9 @@ public class Estudiante extends Comprador implements Descuentos{
         for(DispElect check : menu){
             check.mostrarDatos();
         }
+    }
 
+    public void comprar(){
         System.out.println("Que producto le gustaria comprar?");
         int chose = sc.nextInt();
         if(0>chose && chose<menu.size()){
