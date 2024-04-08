@@ -33,20 +33,20 @@ public class Vip extends Comprador{
     
     public void crearMenu(){
         
-        Tablet tab1 = new Tablet(4000, "Stylus1", "Samsumg", "Sam Pro", "10.5 Pulgadas", "Android", 4, 21000, "Samsumg Redonda de 10.5");
-        Tablet tab2 = new Tablet(5000, "Stylus2", "Huawey", "MatePad 11.5 PaperMatte", "11.5 Pulgadas", "Harmony OS 3.1", 8, 19000, "HUAWEI FullView de 11.5");
-        Tablet tab3 = new Tablet(5000, "Stylus3", "Dell", "5300", "13.3 Pulgadas", "Windows 10 Pro", 16, 25000, "Intel de 13.3");
-        Tablet tab4 = new Tablet(5100, "Stylus4", "Lenovo", "Tab M8", "8 Pulgadas", "A", 3, 30000, "HD de 8");
+        Tablet tab1 = new Tablet(4000.0, "Stylus1", "Samsumg", "Sam Pro", "10.5 Pulgadas", "Android", 4, 21000, "Samsumg Redonda de 10.5");
+        Tablet tab2 = new Tablet(5000.0, "Stylus2", "Huawey", "MatePad 11.5 PaperMatte", "11.5 Pulgadas", "Harmony OS 3.1", 8, 19000, "HUAWEI FullView de 11.5");
+        Tablet tab3 = new Tablet(5000.0, "Stylus3", "Dell", "5300", "13.3 Pulgadas", "Windows 10 Pro", 16, 25000, "Intel de 13.3");
+        Tablet tab4 = new Tablet(5100.0, "Stylus4", "Lenovo", "Tab M8", "8 Pulgadas", "A", 3, 30000, "HD de 8");
 
         // Crear tres objetos de la clase Pc
-        Pc pc1 = new Pc(800, "Modelo1", "Apple", "Pantalla1", 4, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1");
-        Pc pc2 = new Pc(900, "Modelo2", "Lenovo", "Pantalla2", 8, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2");
-        Pc pc3 = new Pc(1000, "IdeaPad 1", "Marca3", "Pantalla3", 16, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3");
+        Pc pc1 = new Pc(4000.0, "800 G3 SFF", "HD", "21,5 Pulgadas", 4, "Windows 10 Pro", "32GB", "DDR4", "Integrada");
+        Pc pc2 = new Pc(8000.0, "ThinkCentre M720s SFF", "Lenovo", "22 Pulgadas", 8, "Windows 10 Pro", "16", "P8", "Integrada");
+        Pc pc3 = new Pc(11000.0, "ProDesk", "HP", "19 Pulgadas", 16, "Windows 10 Home", "32", "P9", "Integrada");
 
         // Crear tres objetos de la clase Laptop
-        Television tv1 = new Television(1000, "Modelo1", "Marca1", "Pantalla1", "1 año");
-        Television tv2 = new Television(1200, "Modelo2", "Marca2", "Pantalla2", "2 años");
-        Television tv3 = new Television(1500, "Modelo3", "Marca3", "Pantalla3", "3 años");
+        Television tv1 = new Television(12000.0, "Mod223", "Motorola", "55 Pulgadas", "1 año");
+        Television tv2 = new Television(9500.0, "Mod453", "Weyon", "60 Pulgadas", "2 años");
+        Television tv3 = new Television(10100.0, "Mod574", "Sansui", "80 Pulgadas", "3 años");
 
         ArrayList<DispElect> menu = new ArrayList<>();
         
