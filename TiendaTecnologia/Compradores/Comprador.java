@@ -1,6 +1,5 @@
-package TiendaTecnologia.Compradores;
+//package TiendaTecnologia.Compradores;
 
-import java.util.Random; 
 
 import java.util.Random; 
 
@@ -43,7 +42,7 @@ public class Comprador {
         this.apellido = apellido;
     }
     
-    public void agregarAlCarrito(DispElec dispositivo) {
+    public void agregarAlCarrito(DispElect dispositivo) {
         this.miCarrito.agregarAlCarrito(dispositivo);
     }
 
