@@ -1,25 +1,26 @@
-package TiendaTecnologia;
+//package TiendaTecnologia;
 
-import TiendaTecnologia.Compradores.*;
+//import TiendaTecnologia.Compradores.*;
 import java.util.Scanner;
 
 public class Administracion{
 	
 	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-        int opcion;
+            Scanner sc = new Scanner(System.in);
+            int opcion;
 
 
-		System.out.println("************Bienvenido a la Tienda de Tecnologia************");
+            System.out.println("************Bienvenido a la Tienda de Tecnologia************");
 
-		do {
-			System.out.println("Por favor ingrese el tipo de compador..")
+            do {
+            System.out.println("Por favor ingrese el tipo de comprador..");
             System.out.println("1) Estudiante");
             System.out.println("2) Socio");
             System.out.println("3) VIP");
             System.out.println("4) Salir");
             System.out.print("Ingrese una opcion: ");
             opcion = sc.nextInt();
+            sc.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -29,13 +30,16 @@ public class Administracion{
 			Estudiante alu = new Estudiante(nombre,apellido);
 			alu.crearMenu();
 			alu.mostrarMenu();
+                        int select;
+                        do{
 			System.out.println("Que le gustaria realizar");
-			System.out.println("1 - Comprar")
+			System.out.println("1 - Comprar");
 			System.out.println("2 - Revisar promociones");
-			System.out.println("3 - Ticket de compra")    ;
+			System.out.println("3 - Ticket de compra");
 
-			int select=sc.nextInt();
-			    do{
+			select=sc.nextInt();
+                        sc.nextLine();
+			    
 			    switch(select){
 				    case 1:
 					    alu.comprar();
@@ -48,9 +52,9 @@ public class Administracion{
 					    break;
 				    default:
 					    System.out.println("Por favor, escoja una de las opciones disponibles");
-			    }while(select=3);
-				    
-			    }
+                            }
+			    }while(select<3);
+			System.exit(0);
                     break;
                 case 2:
                 	
@@ -62,7 +66,7 @@ public class Administracion{
                     System.out.println("Saliendo...");
                     break;
                 default:
-                    System.out.println("Opción inválida.");
+                    System.out.println("OpciÃ³n invÃ¡lida.");
             }
         } while (opcion != 4);
 	}
