@@ -2,7 +2,7 @@ package TiendaTecnologia.Compradores;
 
 public class Socio extends Comprador{
 
-    private int idEstudiante;
+    private int idSocio;
     private ArrayList<DispElect> menu;
     
 
@@ -11,39 +11,38 @@ public class Socio extends Comprador{
         this.menu = new ArrayList<>();
     }
     
-    public void setIdEstidiante(int idEstudiante) {
-        this.idEstudiante = idEstudiante;
+    public void setSocio(int idSocio) {
+        this.idSocio = idSocio;
     }
 
-    public int getIdEstudiante() {
-        return idEstudiante;
+    public int getIdSocio() {
+        return idSocio;
     }
 
     public void crearMenu(){
         Smarthphone smartphone1 = new Smarthphone(17999.0, "11 5G", "Oneplus", "120 Hz 2K Super Fluid AMOLED", "Oxygen OS, Android 13.0", 5, 30, "22x5");
         Smarthphone smartphone2 = new Smarthphone(18310.0, "POCO F5", "Xiaomi", "AMOLED Dotdisplay", "Android 13.0", 6, 35, "22x6");
-        Smarthphone smartphone3 = new Smarthphone(21900.0, "A 5P", "Nothing", "OLED Toughness", "Android 11.0", 8, 40, "20x5");
-
         
-        Pc pc1 = new Pc(29000.0, "ThinkCentre M910s SFF", "Lenovo", "FHD de 23 pulgadas", 4, "Windows 10 Pro", "1 TB", "P8 H61", "778G");
-        Pc pc2 = new Pc(25700.0, "HP Elite", "HP", "Full HD de 22 pulgadas", 8, "Windows 10 Pro", "2 TB", "64S7", "65 P");
-        Pc pc3 = new Pc(50000.0, "iMac", "Apple", "21,5 Pulgadas", 16, "DOS", "2 TB", "P9 H", "3745 B");
-
+        Pc pc1 = new Pc(25700.0, "HP Elite", "HP", "Full HD de 22 pulgadas", 8, "Windows 10 Pro", "2 TB", "64S7", "65 P");
         
-        Laptop laptop1 = new Laptop(49500.0, "Apple MacBook Pro Chip", "Apple", "13 pulgadas", 8, "macOS 10.14 Mojave", "2TB", "SD", "Integrada",64);
-        Laptop laptop2 = new Laptop(30999.0, "MacBook Air", "Apple", "15 pulgadas", 16, "Mac OS", "2TB", "SD", "Integrada",24);
-        Laptop laptop3 = new Laptop(43500.0, "MacBook Air", "Apple", "13 Pulgadas", 32, "Mac OS", "2TB", "SD", "Integrada",12);
+        Laptop laptop1 = new Laptop(30999.0, "MacBook Air", "Apple", "15 pulgadas", 16, "Mac OS", "2TB", "SD", "Integrada",24);
+        Laptop laptop2 = new Laptop(43500.0, "MacBook Air", "Apple", "13 Pulgadas", 32, "Mac OS", "2TB", "SD", "Integrada",12);
 
+        Tablet tab1 = new Tablet(4000.0, "Stylus1", "Samsumg", "Sam Pro", "10.5 Pulgadas", "Android", 4, 21000, "Samsumg Redonda de 10.5");
+        Tablet tab2 = new Tablet(5000.0, "Stylus2", "Huawey", "MatePad 11.5 PaperMatte", "11.5 Pulgadas", "Harmony OS 3.1", 8, 19000, "HUAWEI FullView de 11.5");
+        
+        Television tv1 = new Television(9500.0, "Mod453", "Weyon", "60 Pulgadas", "2 años");
+        Television tv2 = new Television(10100.0, "Mod574", "Sansui", "80 Pulgadas", "3 años");
 
-        menu.add(pc1);
-        menu.add(pc2);
-        menu.add(pc3);
         menu.add(smartphone1);
         menu.add(smartphone2);
-        menu.add(smartphone3);
+        menu.add(pc1);
         menu.add(laptop1);
         menu.add(laptop2);
-        menu.add(laptop3);
+        menu.add(tab1);
+        menu.add(tab2);
+        menu.add(tv1);
+        menu.add(tv2);
     }
 
     public void mostrarMenu(){
@@ -64,12 +63,10 @@ public class Socio extends Comprador{
         System.out.println("Que producto le gustaria comprar?");
         int chose = sc.nextInt();
         sc.nextLine();
-        System.out.println(chose);
-        int limit = menu.size();
-        System.out.println(limit);
-        if(0<=chose && chose<limit){
+        
+        if(0<=chose && chose<menu.size()){
         int chose2 = chose-1;
-        miCarrito.agregarAlCarrito(menu.get(chose2));
+        miCarrito.agregarAlCarrito(menu.get(chose));
         System.out.println("Producto agregado al carrito");
         }
         else{
