@@ -83,9 +83,13 @@ public class Estudiante extends Comprador implements Descuentos{
     }
 
     public void ticket(){
-         
+         double total = 0;
+         System.out.println("Elementos agregados al carrito:");
+         for (DispElect dispositivo : miCarrito.dispositivos) {
+            dispositivo.mostrarDatos(); 
+            total += dispositivo.getPrecio(); 
+         }
+         System.out.println("Total del carrito de compras: " + total);
      }
-    
-    
     
 }
