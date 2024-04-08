@@ -65,8 +65,8 @@ public class Socio extends Comprador{
         sc.nextLine();
         
         if(0<=chose && chose<menu.size()){
-        int chose2 = chose-1;
-        miCarrito.agregarAlCarrito(menu.get(chose));
+        int chose2=chose-1;
+        miCarrito.agregarAlCarrito(menu.get(chose2));
         System.out.println("Producto agregado al carrito");
         }
         else{
@@ -79,7 +79,7 @@ public class Socio extends Comprador{
          double total = 0;
          System.out.println("Elementos agregados al carrito:");
          for (DispElect dispositivo : miCarrito.dispositivos){
-            System.out. print("\n");
+            System.out.print("\n");
             dispositivo.mostrarDatos(); 
             total += dispositivo.getPrecio(); 
          }
@@ -89,16 +89,16 @@ public class Socio extends Comprador{
     public void mostrarDescuentos(){
     
        System.out.println("Ofertas disponibles:");
-       System.out.println("1 - En la compra de una Laptop y un smartphone, el segundo sale a mitad de precio");
-       System.out.println("2 - En la compra de una PC y un Smartphone, el segundo es gratis");
+       System.out.println("1 - En la compra de una HP Elite y un POCO F5, este ultimo tendra un 50% de descuento");
+       System.out.println("2 - En la compra de una MacBook Air de 13 pulgadas y una Sam Pro, ambos estaran a 50% de descuento");
        
        Scanner sc2 = new Scanner(System.in);
        
        int chose2 = sc2.nextInt();
         switch(chose2){
                case 1:
-                    miCarrito.agregarAlCarrito(menu.get(7));
-                    DispElect telefono = menu.get(4);
+                    miCarrito.agregarAlCarrito(menu.get(2));
+                    DispElect telefono = menu.get(1);
                     double newPrice = (telefono.getPrecio()/2);
                     telefono.setPrecio(newPrice);
                     miCarrito.agregarAlCarrito(telefono);
@@ -106,10 +106,14 @@ public class Socio extends Comprador{
                     break;
                    
                 case 2:
-                    miCarrito.agregarAlCarrito(menu.get(2));
-                    DispElect telefono2 = menu.get(3);
-                    telefono2.setPrecio(0);
-                    miCarrito.agregarAlCarrito(telefono2);
+                    DispElect laptop = menu.get(4);
+                    double newPrice = (laptop.getPrecio()/2);
+                    laptop.setPrecio(newPrice);
+                    DispElect tablet = menu.get(5);
+                    double newPrice2 = (tablet.getPrecio()/2);
+                    telefono2.setPrecio(newPrice2);
+                    miCarrito.agregarAlCarrito(laptop);
+                    miCarrito.agregarAlCarrito(tablet);
                     System.out.println("Articulos ya han sido agregados");
                     break;
                 default:
