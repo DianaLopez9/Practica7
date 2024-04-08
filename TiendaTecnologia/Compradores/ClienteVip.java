@@ -18,9 +18,11 @@ import java.util.Scanner;
  */
 public class Vip extends Comprador{
     private int idVip;
+    private ArrayList<DispElect> menu;
 
     public Vip(String nombre, String apellido) {
         super(nombre, apellido);
+        this.menu=new ArrayList<>();
     }
 
     public int getIdVip() {
@@ -47,8 +49,6 @@ public class Vip extends Comprador{
         Television tv1 = new Television(12000.0, "Mod223", "Motorola", "55 Pulgadas", "1 año");
         Television tv2 = new Television(9500.0, "Mod453", "Weyon", "60 Pulgadas", "2 años");
         Television tv3 = new Television(10100.0, "Mod574", "Sansui", "80 Pulgadas", "3 años");
-
-        ArrayList<DispElect> menu = new ArrayList<>();
         
  
         menu.add(tab1);
