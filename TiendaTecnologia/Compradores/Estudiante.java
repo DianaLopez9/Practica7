@@ -43,16 +43,16 @@ public class Estudiante extends Comprador{
     }*/
 
     public void crearMenu(){
-        Smarthphone smartphone1 = new Smarthphone(500.0, "Modelo1", "Marca1", "Pantalla1", "Sistema1", 4, 30, "21x5");
-        Smarthphone smartphone2 = new Smarthphone(600.0, "Modelo2", "Marca2", "Pantalla2", "Sistema2", 6, 35, "22x6");
-        Smarthphone smartphone3 = new Smarthphone(700.0, "Modelo3", "Marca3", "Pantalla3", "Sistema3", 8, 40, "20x5");
+        Smarthphone smartphone1 = new Smarthphone(17999.0, "11 5G", "Oneplus", "120 Hz 2K Super Fluid AMOLED", "Oxygen OS, Android 13.0", 5, 30, "22x5");
+        Smarthphone smartphone2 = new Smarthphone(18310.0, "POCO F5", "Xiaomi", "AMOLED Dotdisplay", "Android 13.0", 6, 35, "22x6");
+        Smarthphone smartphone3 = new Smarthphone(21900.0, "A 5P", "Nothing", "OLED Toughness", "Android 11.0", 8, 40, "20x5");
 
-        // Crear tres objetos de la clase Pc
+        
         Pc pc1 = new Pc(800.0, "Modelo1", "Marca1", "Pantalla1", 4, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1");
         Pc pc2 = new Pc(900.0, "Modelo2", "Marca2", "Pantalla2", 8, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2");
         Pc pc3 = new Pc(1000.0, "Modelo3", "Marca3", "Pantalla3", 16, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3");
 
-        // Crear tres objetos de la clase Laptop
+        
         Laptop laptop1 = new Laptop(1200.0, "Modelo1", "Marca1", "Pantalla1", 8, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1",64);
         Laptop laptop2 = new Laptop(1400.0, "Modelo2", "Marca2", "Pantalla2", 16, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2",24);
         Laptop laptop3 = new Laptop(1600.0, "Modelo3", "Marca3", "Pantalla3", 32, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3",12);
