@@ -16,7 +16,7 @@ public class Pc extends Computadora{
         return "PC";
     }
     
-    public mostrarDatos(){
+    public void mostrarDatos(){
         super.mostrarDatos();
         System.out.println("Memoria: "+this.memoria);    
         System.out.println("Tarjeta Madre: "+this.tarjmadre);
