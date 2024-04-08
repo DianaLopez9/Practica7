@@ -102,24 +102,33 @@ public class Estudiante extends Comprador implements Descuentos{
          System.out.println("Total del carrito de compras: " + total);
      }
 
-    switch(chose2){
-           case 1:
-                miCarrito.agregarAlCarrito(menu.get(7));
-                DispElect telefono = menu.get(4);
-                int newPrice = (telefono.getPrecio()/2);
-                telefono.setPrecio(newPrice);
-                miCarrito.agregarAlCarrito(telefono);
-                System.out.println("Articulos ya han sido agregados");
-                break;
-               
-            case 2:
-                miCarrito.agregarAlCarrito(menu.get(2));
-                DispElect telefono2 = menu.get(3);
-                telefono2.setPrecio(0);
-                miCarrito.agregarAlCarrito(telefono2);
-                System.out.println("Articulos ya han sido agregados");
-                break;
-            default:
-                System.out.println("Utilice las opciones disponibles, por favor");
-       }
-}
+    public void mostrarDescuentos(){
+    
+       System.out.println("Ofertas disponibles:")
+       System.out.println("1 - En la compra de una Laptop y un smartphone, el segundo sale a mitad de precio");
+       System.out.println("2 - En la compra de una PC y un Smartphone, el segundo es gratis");
+       
+       Scanner sc2 = new Scanner(System.in);
+       
+       int chose2 = sc2.nextInt();
+        switch(chose2){
+               case 1:
+                    miCarrito.agregarAlCarrito(menu.get(7));
+                    DispElect telefono = menu.get(4);
+                    int newPrice = (telefono.getPrecio()/2);
+                    telefono.setPrecio(newPrice);
+                    miCarrito.agregarAlCarrito(telefono);
+                    System.out.println("Articulos ya han sido agregados");
+                    break;
+                   
+                case 2:
+                    miCarrito.agregarAlCarrito(menu.get(2));
+                    DispElect telefono2 = menu.get(3);
+                    telefono2.setPrecio(0);
+                    miCarrito.agregarAlCarrito(telefono2);
+                    System.out.println("Articulos ya han sido agregados");
+                    break;
+                default:
+                    System.out.println("Utilice las opciones disponibles, por favor");
+           }
+    }
