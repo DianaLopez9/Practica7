@@ -115,8 +115,8 @@ public class Estudiante extends Comprador{
     public void mostrarDescuentos(){
     
        System.out.println("Ofertas disponibles:");
-       System.out.println("1 - En la compra de una Laptop y un smartphone, el segundo sale a mitad de precio");
-       System.out.println("2 - En la compra de una PC y un Smartphone, el segundo es gratis");
+       System.out.println("1 - En la compra de una MacBook Air de 15 pulgadas y un 11 5G Oneplus, el segundo sale a mitad de precio");
+       System.out.println("2 - En la compra de una HP Elite y un A 5P, el segundo es gratis");
        
        Scanner sc2 = new Scanner(System.in);
        
@@ -124,7 +124,7 @@ public class Estudiante extends Comprador{
         switch(chose2){
                case 1:
                     miCarrito.agregarAlCarrito(menu.get(7));
-                    DispElect telefono = menu.get(4);
+                    DispElect telefono = menu.get(0);
                     double newPrice = (telefono.getPrecio()/2);
                     telefono.setPrecio(newPrice);
                     miCarrito.agregarAlCarrito(telefono);
