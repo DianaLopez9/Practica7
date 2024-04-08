@@ -48,14 +48,14 @@ public class Estudiante extends Comprador{
         Smarthphone smartphone3 = new Smarthphone(21900.0, "A 5P", "Nothing", "OLED Toughness", "Android 11.0", 8, 40, "20x5");
 
         
-        Pc pc1 = new Pc(800.0, "Modelo1", "Marca1", "Pantalla1", 4, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1");
-        Pc pc2 = new Pc(900.0, "Modelo2", "Marca2", "Pantalla2", 8, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2");
-        Pc pc3 = new Pc(1000.0, "Modelo3", "Marca3", "Pantalla3", 16, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3");
+        Pc pc1 = new Pc(29000.0, "ThinkCentre M910s SFF", "Lenovo", "FHD de 23 pulgadas", 4, "Windows 10 Pro", "1 TB", "P8 H61", "778G");
+        Pc pc2 = new Pc(25700.0, "HP Elite", "HP", "Full HD de 22 pulgadas", 8, "Windows 10 Pro", "2 TB", "64S7", "65 P");
+        Pc pc3 = new Pc(50000.0, "iMac", "Apple", "21,5 Pulgadas", 16, "DOS", "2 TB", "P9 H", "3745 B");
 
         
-        Laptop laptop1 = new Laptop(1200.0, "Modelo1", "Marca1", "Pantalla1", 8, "Sistema1", "Memoria1", "TarjetaMadre1", "TarjetaGrafica1",64);
-        Laptop laptop2 = new Laptop(1400.0, "Modelo2", "Marca2", "Pantalla2", 16, "Sistema2", "Memoria2", "TarjetaMadre2", "TarjetaGrafica2",24);
-        Laptop laptop3 = new Laptop(1600.0, "Modelo3", "Marca3", "Pantalla3", 32, "Sistema3", "Memoria3", "TarjetaMadre3", "TarjetaGrafica3",12);
+        Laptop laptop1 = new Laptop(49500.0, "Apple MacBook Pro Chip", "Apple", "13 pulgadas", 8, "macOS 10.14 Mojave", "2TB", "SD", "Integrada",64);
+        Laptop laptop2 = new Laptop(30999.0, "MacBook Air", "Apple", "15 pulgadas", 16, "Mac OS", "2TB", "SD", "Integrada",24);
+        Laptop laptop3 = new Laptop(43500.0, "MacBook Air", "Apple", "13 Pulgadas", 32, "Mac OS", "2TB", "SD", "Integrada",12);
 
 
         menu.add(pc1);
