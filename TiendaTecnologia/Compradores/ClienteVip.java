@@ -86,6 +86,7 @@ public class Vip extends Comprador{
         double total = 0;
         System.out.println("Elementos agregados al carrito:");
         for (DispElect dispositivo : miCarrito.dispositivos) {
+            System.out.print("\n");
             dispositivo.mostrarDatos(); 
             total += dispositivo.getPrecio(); 
         }
